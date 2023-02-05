@@ -30,7 +30,7 @@ namespace GGJ
             waterCollectParticle.Play();
             GetComponent<Animator>().enabled = false;
             turnParent.SetActive(false);
-            GameManager.Instance.ChangeTurnCount(increaseTurnWhenCollected);
+            GameManager.Instance.ChangeTurnCount(increaseTurnWhenCollected + 1);
             parentTile.childObstacle = null;
             parentTile.childObstacleType=0;
         }

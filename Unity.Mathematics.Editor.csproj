@@ -9,10 +9,10 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{46021B18-8286-1482-CFA8-DB85884411AB}</ProjectGuid>
+    <ProjectGuid>{31826B0E-4315-FE5A-5225-6F6980269DD4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>sc.utilities.replace-selected.editor</AssemblyName>
+    <AssemblyName>Unity.Mathematics.Editor</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
@@ -26,7 +26,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
-    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -35,7 +35,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
-    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup>
     <NoConfig>true</NoConfig>
@@ -48,7 +48,7 @@
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <UnityProjectGenerator>Package</UnityProjectGenerator>
     <UnityProjectGeneratorVersion>2.0.16</UnityProjectGeneratorVersion>
-    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityProjectType>Editor:5</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2021.3.16f1</UnityVersion>
   </PropertyGroup>
@@ -56,10 +56,13 @@
     <Analyzer Include="C:\Virtual_Studio_Community_2019\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\ThirdParty\ReplaceSelected\Editor\ReplaceSelected.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.6\Unity.Mathematics.Editor\MatrixDrawer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.6\Unity.Mathematics.Editor\PostNormalizedVectorDrawer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.6\Unity.Mathematics.Editor\QuaternionDrawer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.6\Unity.Mathematics.Editor\PrimitiveVectorDrawer.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\ThirdParty\ReplaceSelected\Editor\sc.utilities.replace-selected.editor.asmdef" />
+    <None Include="Library\PackageCache\com.unity.mathematics@1.2.6\Unity.Mathematics.Editor\Unity.Mathematics.Editor.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -754,6 +757,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Unity.Mathematics.csproj">
+      <Project>{1EA13C21-F568-0C73-060E-F1D3637F1083}</Project>
+      <Name>Unity.Mathematics</Name>
+    </ProjectReference>
     <ProjectReference Include="UnityEngine.TestRunner.csproj">
       <Project>{84E54E56-F01A-C60F-8D8E-C26B11B73A1C}</Project>
       <Name>UnityEngine.TestRunner</Name>

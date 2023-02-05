@@ -9,10 +9,10 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{46021B18-8286-1482-CFA8-DB85884411AB}</ProjectGuid>
+    <ProjectGuid>{123788C3-E136-6B9E-32C6-1A9F560FBEBF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>sc.utilities.replace-selected.editor</AssemblyName>
+    <AssemblyName>Unity.VisualScripting.SettingsProvider.Editor</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
@@ -48,7 +48,7 @@
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <UnityProjectGenerator>Package</UnityProjectGenerator>
     <UnityProjectGeneratorVersion>2.0.16</UnityProjectGeneratorVersion>
-    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityProjectType>Editor:5</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2021.3.16f1</UnityVersion>
   </PropertyGroup>
@@ -56,10 +56,18 @@
     <Analyzer Include="C:\Virtual_Studio_Community_2019\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\ThirdParty\ReplaceSelected\Editor\ReplaceSelected.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\SettingsProvider\ProjectSettingsProviderView.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\SettingsProvider\ProjectSettings\CustomPropertyProviderSettings.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\SettingsProvider\EditorPreferencesProvider.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\SettingsProvider\ProjectSettings\TypeOptionsSettings.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\SettingsProvider\ProjectSettings\AssemblyOptionsSettings.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\SettingsProvider\ProjectSettingsProvider.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\SettingsProvider\ProjectSettings\ScriptReferenceResolverSettings.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\SettingsProvider\EditorPreferencesProviderView.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\SettingsProvider\ProjectSettings\BackupSettings.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\ThirdParty\ReplaceSelected\Editor\sc.utilities.replace-selected.editor.asmdef" />
+    <None Include="Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\SettingsProvider\Unity.VisualScripting.SettingsProvider.Editor.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -754,6 +762,26 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Unity.VisualScripting.Core.csproj">
+      <Project>{8B3D4F58-D507-F74B-1BA9-5A90221FD715}</Project>
+      <Name>Unity.VisualScripting.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VisualScripting.Core.Editor.csproj">
+      <Project>{264EF11D-5566-8C5B-E2C3-5BA56082A7ED}</Project>
+      <Name>Unity.VisualScripting.Core.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VisualScripting.Flow.csproj">
+      <Project>{4F0473BD-67D9-C495-755B-4D9E2021319D}</Project>
+      <Name>Unity.VisualScripting.Flow</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VisualScripting.Flow.Editor.csproj">
+      <Project>{C1373776-C2AB-F8D0-3DF2-619AA513726B}</Project>
+      <Name>Unity.VisualScripting.Flow.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VisualScripting.State.csproj">
+      <Project>{66B6AAC4-5BD7-7C1F-CC5F-D7FDF4A80C39}</Project>
+      <Name>Unity.VisualScripting.State</Name>
+    </ProjectReference>
     <ProjectReference Include="UnityEngine.TestRunner.csproj">
       <Project>{84E54E56-F01A-C60F-8D8E-C26B11B73A1C}</Project>
       <Name>UnityEngine.TestRunner</Name>

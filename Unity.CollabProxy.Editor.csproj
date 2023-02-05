@@ -9,10 +9,10 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{46021B18-8286-1482-CFA8-DB85884411AB}</ProjectGuid>
+    <ProjectGuid>{F473C7C4-F7BF-C4EE-F589-5DB31685AF57}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>sc.utilities.replace-selected.editor</AssemblyName>
+    <AssemblyName>Unity.CollabProxy.Editor</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
@@ -48,7 +48,7 @@
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <UnityProjectGenerator>Package</UnityProjectGenerator>
     <UnityProjectGeneratorVersion>2.0.16</UnityProjectGeneratorVersion>
-    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityProjectType>Editor:5</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2021.3.16f1</UnityVersion>
   </PropertyGroup>
@@ -56,10 +56,10 @@
     <Analyzer Include="C:\Virtual_Studio_Community_2019\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\ThirdParty\ReplaceSelected\Editor\ReplaceSelected.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.0\Editor\PlasticSCM\Toolbar\ToolbarButton.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\ThirdParty\ReplaceSelected\Editor\sc.utilities.replace-selected.editor.asmdef" />
+    <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.0\Editor\PlasticSCM\Toolbar\Unity.CollabProxy.Editor.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -754,6 +754,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Unity.PlasticSCM.Editor.csproj">
+      <Project>{CD9B2711-C5A1-3E95-7D37-68351BDD9E3B}</Project>
+      <Name>Unity.PlasticSCM.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="UnityEngine.TestRunner.csproj">
       <Project>{84E54E56-F01A-C60F-8D8E-C26B11B73A1C}</Project>
       <Name>UnityEngine.TestRunner</Name>
